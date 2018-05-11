@@ -1,11 +1,7 @@
-// load particles
-window.onload = function() {
-  Particles.init({
-    selector: '.background',
-    color: ['#0066cc', '#404B69', '#DBEDF3'],
-    connectParticles: true
-  });
-};
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles-js', 'js/particles.json', function() {
+    console.log('callback - particles.js config loaded');
+});
 
 (function($) {
 
